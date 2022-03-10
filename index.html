@@ -27,13 +27,16 @@ violeta oscuro 560BAD
 		body {
 		    font-family: 'Bebas Neue';font-size: 22px;
 		}
-		
-		i[class^="icon-"]:before {
-			display: inline-block;
+		a{
+			color: white;
+		}
+		a:link{
 			text-decoration: none;
 		}
 		</style>
 		<style>
+			.fill-container{height: 100%; width:100%;}
+
 			td{vertical-align:center;}
 
 			@keyframes hightlight{
@@ -103,30 +106,61 @@ violeta oscuro 560BAD
 			.profile-btn{animation-delay: 0.4s;}
 			.profile-img{animation-delay: 0.8s;}
 			.profile.name{animation-delay: 1.2s;}
+
+
 			.icon{transition-duration: 0.5s;}
 
 			.icon:hover{
 				transform:  scale(1.2) rotate(5deg);
 			}
 
+			/* PORTFOLIO SECTION */
+			.portfolio-item{
+				background-color:#560BAD;
+				height: 30vh;
+			}
+
+
+			/*CONTACT FORM*/
+			.contact-form{
+				background-color: #FDC500;
+				color: white;
+			}
+			input[type="text"],input[type="email"] {
+				background: rgba(255,255,255,0.1);
+				border:none;
+			}
+
+			textarea{
+				background: rgba(255,255,255,0.1) !important;
+				border:none !important;
+
+			}
+			textarea::placeholder{
+			  color: rgba(255,255,255,0.7) !important;
+			}
+
+			.form-control::placeholder {
+			  color: rgba(255,255,255,0.7);
+			}
+
+			.btn-submit{
+				align-items: center;
+				height: 10vh;
+				width:10vh;
+				border-radius: 50%;
+				background-color:#560BAD;
+				border: none;
+			}
+
 		</style>
 
 		<script>
-			const sections = [document.getElementById("desarrollo"),
-			document.getElementById("automation"),
-			document.getElementById("data-analysis"),
-			document.getElementById("portfolio"),
-			document.getElementById("about-me"),
-			document.getElementById("contact-me")
-			]
 			function goTo(element){
 				var elmnt = document.getElementById(element);
-				elmnt.scrollIntoView();
+				elmnt.scrollIntoView({behavior:"smooth"});
 			}
 
-			function baseAnimation(element){
-				console.log(element);
-			}
 		</script>
 	</head>
 	<body style="color:white; background-color: #FDC500;">
@@ -144,10 +178,17 @@ violeta oscuro 560BAD
 
 						<ul style="padding: 0;">
 							<li style="margin-right: 10%; display: inline-block;">
-								<i class="fa-brands fa-instagram icon profile profile-btn"></i>
+								<a href="https://www.linkedin.com/in/yamilemanueldaboul/">
+									<i class="fa-brands fa-linkedin icon profile profile-btn"></i>
+
+
+								</a>
 							</li>
 							<li style="display: inline-block;">
-								<i class="fa-solid fa-envelope icon profile profile-btn"></i>
+								<a href="mailto:yamilemanuel3@gmail.com">
+									<i class="fa-solid fa-envelope icon profile profile-btn"></i>
+	
+								</a>
 							</li>
 							<li style="margin-left: 10%; display: inline-block;">
 								<a href="https://github.com/yamil-emanuel">
@@ -258,10 +299,10 @@ violeta oscuro 560BAD
 		</div>
 
 
-		<!--desarrollo-->
+<!--desarrollo SECTION-->
 		<div id="desarrollo" class="row" style="height: 100vh; background-color:#560BAD; color:#FDC500;">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1>SOFTWARE DEVELOPMENT</h1>
+				<h1>SOFTWARE DEVELOPMENT / DATA /AUTO</h1>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -269,30 +310,8 @@ violeta oscuro 560BAD
 				<h3>JAVASCRIPT</h3>
 				<h3>HTML</h3>
 				<h3>CSS</h3>
-			</div>	
-		</div>
-
-		<!--data-analysis-->
-		<div id="data-analysis" class="row" style="height: 100vh; background-color:#white; color:#560BAD;">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1>data-analysis</h1>
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<h3>PANDAS</h3>
 				<h3>R</h3>
-				<h3></h3>
-				<h3></h3>
-			</div>	
-		</div>
-
-		<!--automation-->
-		<div id="automation" class="row" style="height: 100vh; background-color:#F72585; color:white;">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1>automation</h1>
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<h3>PYTHON</h3>
 				<h3>PYAUTOGUI</h3>
 				<h3>SCAPY</h3>
@@ -300,19 +319,50 @@ violeta oscuro 560BAD
 			</div>	
 		</div>
 
-		<!--portfolio-->
-		<div id="portfolio" class="row" style="height: 100vh; background-color:#560BAD; color:#FDC500;">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+<!--portfolio SECTION-->
+		<div id="portfolio" class="row" style="height: 100vh; background-color:white; color:#560BAD;">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>portfolio</h1>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<div class="portfolio-item">
+							<h3>PROJECT NAME</h3>
+							<img src="" class="img-responsive">
+
+							<i class="fa-solid fa-mobile-screen-button"></i>
+							<i class="fa-solid fa-display-code"></i>
+							<i class="fa-brands fa-bots"></i>
+							<i class="fa-solid fa-message-bot"></i>
+							<i class="fa-solid fa-database"></i>
+							<i class="fa-solid fa-chart-line"></i>
+							<i class="fa-solid fa-laptop-mobile"></i>
+
+							<p>RESPONSIVE -FAST </p>
+							<p>DATA DRIVEN DESITIONS</p>
+							<p>
+								AUTO-> Automatizá tareas repetitivas y ahorrá tiempo y energía.
+								Scrapper ML -> precios, promedio, etc
+							</p>
+							<p></p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						BLA
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						BLA
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						BLA
+					</div>
+				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p>TEXT</p>
-			</div>	
 		</div>
 
-		<!--about-me-->
-		<div id="about-me" class="row" style="height: 100vh; background-color:white; color:#560BAD;">
+<!--about-me SECTION-->
+		<div id="about-me" class="row" style="height: 100vh; background-color:#F72585; color:white;">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<h1>ABOUT ME</h1>
 			</div>
@@ -322,13 +372,73 @@ violeta oscuro 560BAD
 			</div>	
 		</div>
 
-		<div id="contact-form" class="row" style="height: 100vh; background-color:#FDC500; color:#560BAD;">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1>CONTACT</h1>
-			</div>
+<!--CONTACT SECTION-->
+		<div id="contact-form" class="row contact-form" style="height: 100vh;">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100%;">
 
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p>TEXT</p>
+				<table class="fill-container">
+					<tr class="fill-container">
+						<td class="fill-container">
+
+							<!--
+							<div style="height:90%; width:90%; background-color:rgba(255,255,255,0.2); border-radius: 1%; margin-right: auto; margin-left: auto; text-align: center;">						
+							</div>
+						-->
+							<div style="text-align: center;">
+								<i class="fa-regular fa-comment profile-btn" style="font-size: 10em;"></i>	
+
+								<h1 style="margin-top:auto;">CONTACT CENTER</h1>
+							</div>
+
+
+						</td>
+					</tr>
+				</table>
+			</div>
+<!--CONTACT FORM -->
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100%;">
+				<table class="fill-container"><tr class="fill-container"><td class="fill-container">
+
+					<form action="" class="my-auto" style="margin-right: 10vw;" method="POST" role="form">
+					
+						<div class="form-group align-middle">
+
+							<label for="name">NAME</label>
+							<input id="name"type="text" class="form-control" id="" placeholder="Your name" required>
+
+							<ul style="padding: 0; padding-top:3vh;">
+								<li style="display: inline-block; width:48%; margin:0; padding:0">
+
+									<label for="email">EMAIL</label>
+									<input id="email" type="email" class="form-control" id="" placeholder="Your email" required>
+								</li>
+
+								<li style="display: inline-block; width:51%; margin:0; padding:0">
+
+									<label for="secondary-contact">SECONDARY CONTACT</label>
+									<input id="secondary-contact" type="text" class="form-control" id="" placeholder="Secondary contact" required>
+
+								</li>
+							</ul>
+
+
+
+							<label for="" style="margin-top:3vh;">MESSAGE</label >
+							<textarea name="msg" cols="40" rows="5" class="form-control" id="" placeholder="Input field">
+							</textarea>
+						</div>
+					
+						
+						<button type="submit" style="margin-left:90%; margin-top: 3vh;"class="btn-submit">
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</form>				
+
+
+
+
+				</td></tr></table>
+
 			</div>	
 		</div>
 
@@ -338,7 +448,5 @@ violeta oscuro 560BAD
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- 		<script src="Hello World"></script>
 	</body>
 </html>
