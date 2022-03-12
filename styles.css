@@ -31,11 +31,15 @@ a:link{
 	td{vertical-align:center;}
 
 	@keyframes hightlight{
-		from{
+		0%{
 			transform:scale(1,1);
 		}
-		to{
+		50%{
 			transform:scale(1.05, 1) rotate(1deg);
+		}
+		100%{
+			transform:scale(1,1);
+
 		}
 	}
 
