@@ -35,6 +35,10 @@ violeta oscuro 560BAD
 		}
 		</style>
 		<style>
+			.text-responsive {
+			  font-size: calc(100% + 1vw + 1vh);
+			}
+
 			.fill-container{height: 100%; width:100%;}
 
 			td{vertical-align:center;}
@@ -114,6 +118,12 @@ violeta oscuro 560BAD
 				transform:  scale(1.2) rotate(5deg);
 			}
 
+			/* DESARROLLO */
+			.filter-amarillo{
+				filter: invert(78%) sepia(69%) saturate(2565%) hue-rotate(1deg) brightness(104%) contrast(105%);
+
+			}
+
 			/* PORTFOLIO SECTION */
 			.portfolio-item{
 				background-color:#560BAD;
@@ -133,15 +143,18 @@ violeta oscuro 560BAD
 			input[type="text"],input[type="email"] {
 				background: rgba(255,255,255,0.1);
 				border:none;
+				box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.05) !important;
 			}
 
 			textarea{
 				background: rgba(255,255,255,0.1) !important;
 				border:none !important;
+				box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.05) !important;
+
 
 			}
 			textarea::placeholder{
-			  color: rgba(255,255,255,0.7) !important;
+			  color: rgba(255,255,255,0.7);
 			}
 
 			.form-control::placeholder {
@@ -155,6 +168,15 @@ violeta oscuro 560BAD
 				border-radius: 50%;
 				background-color:#560BAD;
 				border: none;
+			}
+
+			/*FOOTER*/
+			#footer{
+				background-color: #560BAD;
+				color: white;
+				width:100vw;
+				height:10vh;
+				text-align: center;
 			}
 
 		</style>
@@ -225,8 +247,8 @@ violeta oscuro 560BAD
 									</strong>
 								</h1>
 							</td>
-							<td style="vertical-align:center; text-align: ;width:60vw; font-style: italic;" >
-								WEB APPS, SOFTWARE DEVELOPMENT
+							<td class="responsive-font-example" style="vertical-align:center; text-align: ;width:60vw; font-style: italic;" >
+								<h3>WEB APPS, SOFTWARE DEVELOPMENT</h3>
 							</td>
 						</tr>
 					</table>
@@ -285,14 +307,14 @@ violeta oscuro 560BAD
 				<div class="row align-middle titular titular-about-me" style="margin-left: auto; margin-right:auto; background-color:white; color: #560BAD;height: 20vh;" onclick="goTo('about-me')">
 					<table class="" style="height:20vh;">
 						<tr>
-							<td style="vertical-align:center; width:40vw;">
+							<td style="vertical-align:center; width:60vw;">
 								<h1 class="titular"style="margin-left: 5vw; font-style: italic; height:10vh; font-size: 200%; letter-spacing: 0.1em;">
 									<strong>
 									ABOUT ME
 									</strong>
 								</h1>
 							</td>
-							<td style="vertical-align:center; text-align: ;width:60vw; font-style: italic;" >
+							<td style="vertical-align:center; text-align: ;width:40vw; font-style: italic;" >
 								-
 							</td>
 						</tr>
@@ -305,20 +327,48 @@ violeta oscuro 560BAD
 
 <!-- DSCR SECTION-->
 		<div id="desarrollo" class="row" style="height: 100%; background-color:#560BAD; color:#FDC500;">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div style="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>QUE HAGO</h1>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="height:100vh;">
-				<h3>PYTHON</h3>
-				<h3>JAVASCRIPT</h3>
-				<h3>HTML</h3>
-				<h3>CSS</h3>
+				<h1 style="color:#560BAD; background-color:#FDC500"> DESARROLLO </h1>
+				<p>Desarrollo web, landingpages, formularios, aplicaciones web, APIs</p>
+				<i style="height: 10vh;" class="fa-brands fa-python"></i>
+				<img style="max-height: 10vh;" class="filter-amarillo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg">
+				<img style="max-height: 10vh;"src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg">
+				<img style="max-height: 10vh;" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg">
+				<img style="max-height: 10vh;" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">
+				<img style="max-height: 10vh;" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg">
+
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<h3>PANDAS</h3>
-				<h3>R</h3>
+				<h1 style="color:#560BAD; background-color:#FDC500">ANÁLISIS DE DATOS</h1>
+				<p style="color:">Ask, collect,clean, analyzing,interpreting and share it. Finding what stories data could tell us.
+					
+				</p>
+				<img style="max-height: 10vh;" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" style="max-height: 10vh;" viewBox="0 0 724 561">
+				  <defs>
+				    <linearGradient id="gradientFill-1" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox" spreadMethod="pad">
+				      <stop offset="0" stop-color="rgb(203,206,208)" stop-opacity="1"/>
+				      <stop offset="1" stop-color="rgb(132,131,139)" stop-opacity="1"/>
+				    </linearGradient>
+				    <linearGradient id="gradientFill-2" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox" spreadMethod="pad">
+				      <stop offset="0" stop-color="rgb(39,109,195)" stop-opacity="1"/>
+				      <stop offset="1" stop-color="rgb(22,92,170)" stop-opacity="1"/>
+				    </linearGradient>
+				  </defs>
+				  <path d="M361.453,485.937 C162.329,485.937 0.906,377.828 0.906,244.469 C0.906,111.109 162.329,3.000 361.453,3.000 C560.578,3.000 722.000,111.109 722.000,244.469 C722.000,377.828 560.578,485.937 361.453,485.937 ZM416.641,97.406 C265.289,97.406 142.594,171.314 142.594,262.484 C142.594,353.654 265.289,427.562 416.641,427.562 C567.992,427.562 679.687,377.033 679.687,262.484 C679.687,147.971 567.992,97.406 416.641,97.406 Z" fill="url(#gradientFill-1)" fill-rule="evenodd"/>
+				  <path d="M550.000,377.000 C550.000,377.000 571.822,383.585 584.500,390.000 C588.899,392.226 596.510,396.668 602.000,402.500 C607.378,408.212 610.000,414.000 610.000,414.000 L696.000,559.000 L557.000,559.062 L492.000,437.000 C492.000,437.000 478.690,414.131 470.500,407.500 C463.668,401.969 460.755,400.000 454.000,400.000 C449.298,400.000 420.974,400.000 420.974,400.000 L421.000,558.974 L298.000,559.026 L298.000,152.938 L545.000,152.938 C545.000,152.938 657.500,154.967 657.500,262.000 C657.500,369.033 550.000,377.000 550.000,377.000 ZM496.500,241.024 L422.037,240.976 L422.000,310.026 L496.500,310.002 C496.500,310.002 531.000,309.895 531.000,274.877 C531.000,239.155 496.500,241.024 496.500,241.024 Z" fill="url(#gradientFill-2)" fill-rule="evenodd"/>
+				</svg>
+				<img style="max-height: 10vh;" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg">
+				<img style="max-height: 10vh;"  src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg">
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<H1 style="color:#560BAD; background-color:#FDC500">AUTOMATION</H1>
+				<p>If you're doing it more than once, it could be automated.
+				Gathering data from internet,</p>
+
 				<h3>PYTHON</h3>
 				<h3>PYAUTOGUI</h3>
 				<h3>SCAPY</h3>
@@ -343,17 +393,17 @@ violeta oscuro 560BAD
 								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" style="width: 80%; margin-right: 10%; margin-left: 10%;">
 									<div id="carousel-id" class="carousel slide" data-ride="carousel" style="height:80%;">
 										<ol class="carousel-indicators">
-											<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+											<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
 											<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-											<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+											<li data-target="#carousel-id" data-slide-to="2" class=""></li>
 										</ol>
 										<div class="carousel-inner">
 											<div class="item">
 												<img class="carousel-img" alt="First slide" src="https://altertecnia.com/wp-content/uploads/oee-4.png">
 												<div class="container">
 													<div class="carousel-caption">
-														<h1>Example headline.</h1>
-														<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+														<h1 >OPINA.io</h1>
+														<p>Create your own surveys and share them with your friends, keep the results on hand.</p>
 														<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
 													</div>
 												</div>
@@ -362,8 +412,8 @@ violeta oscuro 560BAD
 												<img  class="carousel-img" alt="Second slide" src="https://altertecnia.com/wp-content/uploads/oee-4.png">
 												<div class="container">
 													<div class="carousel-caption">
-														<h1>Another example headline.</h1>
-														<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+														<h1>Mercado Libre Currency converter</h1>
+														<p>Google Chrome extension. Surf along the most popular online e-commerce in Argentina and convert the local's price to the most used cryptocurrences prices.</p>
 														<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
 													</div>
 												</div>
@@ -400,7 +450,7 @@ violeta oscuro 560BAD
 		</div>
 
 <!--CONTACT SECTION-->
-		<div id="contact-form" class="row contact-form" style="height: 100vh;">
+		<div id="contact-form" class="row contact-form" style="height: 90vh;">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100%;">
 
 				<table class="fill-container">
@@ -426,33 +476,32 @@ violeta oscuro 560BAD
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100%;">
 				<table class="fill-container"><tr class="fill-container"><td class="fill-container">
 
-					<form action="" class="my-auto" style="margin-right: 10vw; margin-left: 10vw;" method="POST" role="form">
+					<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddTjwJmjPMIsPM_41L3C_-FZJGSuo7J0udrqUO65lZLlypvQ/formResponse" class="my-auto" style="margin-right: 10vw; margin-left: 10vw;" method="POST" role="form">
 					
 						<div class="form-group align-middle">
 
 							<label for="name">NAME</label>
-							<input id="name"type="text" class="form-control" id="" placeholder="Your name" required>
+							<input name="entry.2005620554" type="text" class="form-control" id="" placeholder="Your name" required>
 
 							<ul style="padding: 0;">
 								<li style="display: inline-block; width:48%; margin:0; padding:0">
 
 									<label for="email" style="padding-top:3vh;">EMAIL</label>
-									<input id="email" type="email" class="form-control" id="" placeholder="Your email" required>
+									<input id="email" type="email" class="form-control" name="entry.1707830101" placeholder="Your email" required>
 								</li>
 
 								<li style="display: inline-block; width:50%; margin:0; padding:0">
 
 									<label for="secondary-contact" style="padding-top:3vh;">SECONDARY CONTACT</label>
-									<input id="secondary-contact" type="text" class="form-control" id="" placeholder="Secondary contact" required>
+									<input id="secondary-contact" name="entry.1166974658" type="text" class="form-control"  placeholder="Secondary contact" required>
 
 								</li>
 							</ul>
 
 
 
-							<label for="" style="margin-top:3vh;">MESSAGE</label >
-							<textarea name="msg" cols="40" rows="5" class="form-control" id="" placeholder="Input field">
-							</textarea>
+							<label for="" style="margin-top:3vh;">MESSAGE</label>
+							<textarea name="entry.839337160" cols="40" rows="5" class="form-control" id="msg" placeholder="ENTER YOUR MESSAGE HERE! "></textarea>
 						</div>
 					
 						
@@ -465,10 +514,17 @@ violeta oscuro 560BAD
 
 
 				</td></tr></table>
-
 			</div>	
 		</div>
+<!--FOOTER-->
+		<div class="row">
+			<div id="footer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<table class="fill-container"><tr class="fill-container"><td class="fill-container">
+					<p>Yamil Emanuel Daboul - 2022</p>
+				</td></tr></table>
 
+			</div>
+		</div>
 
 
 		<!-- jQuery -->
