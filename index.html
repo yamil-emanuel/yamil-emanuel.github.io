@@ -23,7 +23,7 @@ violeta oscuro 560BAD
 
 		<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 		<link rel="stylesheet" href="styles.css">
-
+		<script src="js.js"></script>
 		<script>
 			function goTo(element){
 				var elmnt = document.getElementById(element);
@@ -78,7 +78,7 @@ violeta oscuro 560BAD
 
 <!-- columna derecha  -->
 
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100vh; padding: 0px;">
+			<div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="height:100vh; padding: 0px;">
 
 				<div class="row align-middle titular titular-development" style="margin-left: auto; margin-right:auto; background-color:#560BAD; color:#FDC500;height: 20vh;" onclick="goTo('desarrollo')">
 					<table class="" style="height:20vh;">
@@ -175,24 +175,54 @@ violeta oscuro 560BAD
 
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="height:100vh;">
 				<h1 style="color:#560BAD; background-color:#FDC500"> DESARROLLO </h1>
-				<p>Desarrollo web, landingpages, formularios, aplicaciones web, APIs</p>
-				<img style="max-height: 10vh;" src="statics/python.svg">				
-				<img style="max-height: 10vh;" src="statics/django.svg">
-				<img style="max-height: 10vh;" src="statics/js.svg">
-				<img style="max-height: 10vh;" src="statics/html5.svg">
-				<img style="max-height: 10vh;" src="statics/css3.svg">
-				<img style="max-height: 10vh;" src="statics/postgre.svg">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height:80vh;">
+						<table class="fill-container"><tr class="fill-container"> <td class="fill-container"> 
+							<p class="my-auto" style="transform:rotate(-90deg); margin-left: -19vh; font-size: 10vh; letter-spacing:3vh; margin-bottom: 0;">ECOMMERCE</p>
+						</td></tr></table>
+
+						<!--  -->
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" style="height:80vh;">
+						<table class="fill-container"><tr class="fill-container"> <td class="fill-container"> 
+							<div class="my-auto">
+								<p style="font-size:10vh; margin-bottom: -5vh;">APIs</p>
+								<p style="font-size: 10vh; margin-bottom: -1vh;">LANDING PAGES</p>
+								<p style="background-color:#FDC500; color:#560BAD; font-size: 10vh; margin-bottom: 0px;">PAGINAS WEB</p>
+								<p style="font-size: 10vh; letter-spacing:2vh; margin-top: -2vh;">ONLINE</p>
+
+								<p style="font-size: 10vh; letter-spacing:2vh;margin-top: -7vh;">FORMS</p>
+							</div>
+						</td></tr></table>
+
+					</div>	
+				</div>
+				<div style="text-align: center;">
+					<img style="max-height: 5vh;" src="statics/python.svg">				
+					<img style="max-height: 5vh;" src="statics/django.svg">
+					<img style="max-height: 5vh;" src="statics/js.svg">
+					<img style="max-height: 5vh;" src="statics/html5.svg">
+					<img style="max-height: 5vh;" src="statics/css3.svg">
+					<img style="max-height: 5vh;" src="statics/postgre.svg">	
+				</div>
+
 
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="height:100vh;">
 				<h1 style="color:#560BAD; background-color:#FDC500">ANÁLISIS DE DATOS</h1>
-				<p style="color:">Ask, collect,clean, analyzing,interpreting and share it. Finding what stories data could tell us.
-					
-				</p>
-				<img style="max-height: 10vh;" src="statics/pandas.svg">
-				<img style="max-height: 10vh;" src="statics/r.svg">
-				<img style="max-height: 10vh;" src="statics/matplotlib.svg">
-				<img style="max-height: 10vh;"  src="statics/numpy.svg">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:80vh;">
+						
+					</div>
+				</div>
+
+				<div style="text-align:center; width:100%;">
+					<img style="max-height: 5vh;" src="statics/pandas.svg">
+					<img style="max-height: 5vh;" src="statics/r.svg">
+					<img style="max-height: 5vh;" src="statics/matplotlib.svg">
+					<img style="max-height: 5vh;"  src="statics/numpy.svg">
+				</div>
+
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"style="height:100vh;">
 				<H1 style="color:#560BAD; background-color:#FDC500">AUTOMATION</H1>
