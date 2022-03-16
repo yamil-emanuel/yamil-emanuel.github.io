@@ -10,7 +10,11 @@ violeta oscuro 560BAD
   display: none;
 }
 
+html,body{
+	overflow-x: hidden;
+	margin: 0;
 
+}
 body {
     font-family: 'Bebas Neue';font-size: 22px;
 }
@@ -20,180 +24,179 @@ a{
 a:link{
 	text-decoration: none;
 }
-</style>
-<style>
-	.text-responsive {
-	  font-size: calc(100% + 1vw + 1vh);
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+.fill-container{height: 100%; width:100%;}
+
+td{vertical-align:center;}
+
+@keyframes hightlight{
+	0%{
+		transform:scale(1,1);
 	}
-
-	.fill-container{height: 100%; width:100%;}
-
-	td{vertical-align:center;}
-
-	@keyframes hightlight{
-		0%{
-			transform:scale(1,1);
-		}
-		50%{
-			transform:scale(1.05, 1) rotate(1deg);
-		}
-		100%{
-			transform:scale(1,1);
-
-		}
+	50%{
+		transform:scale(1.05, 1) rotate(1deg);
 	}
+	100%{
+		transform:scale(1,1);
 
-	/* INTRO ANIMATION */
-	@keyframes intro_menu {
-		from{
-			transform: translate(60vw);
-			visibility: hidden;
-		}
-		to{
-			transform: translate(0vw);
-			visibility: visible;
-		}
 	}
+}
 
-	.titular{
-		transition-duration: 0.5s;
-		animation: intro_menu 1.5s 1;
+/* INTRO ANIMATION */
+@keyframes intro_menu {
+	from{
+		transform: translate(60vw);
 		visibility: hidden;
-		animation-fill-mode: forwards; 
 	}
-
-	.titular.animated{visibility: visible;}
-
-	.titular:hover{
-		animation: intro_menu 0s forwards, hightlight 0.5s forwards;
+	to{
+		transform: translate(0vw);
+		visibility: visible;
 	}
+}
 
-	.titular-development{animation-delay: 1.8s;}
-	.titular-automation{animation-delay: 1.4s;}
-	.titular-data-analysis{animation-delay: 1.2s;}
-	.titular-porfolio{animation-delay: 0.8s;}
-	.titular-about-me{animation-delay:0s;}
+.titular{
+	transition-duration: 0.5s;
+	animation: intro_menu 1.5s 1;
+	visibility: hidden;
+	animation-fill-mode: forwards; 
+}
+
+.titular.animated{visibility: visible;}
+
+.titular:hover{
+	animation: intro_menu 0s forwards, hightlight 0.5s forwards;
+}
+
+.titular-development{animation-delay: 1.8s;}
+.titular-automation{animation-delay: 1.4s;}
+.titular-data-analysis{animation-delay: 1.2s;}
+.titular-porfolio{animation-delay: 0.8s;}
+.titular-about-me{animation-delay:0s;}
 
 
-	/* BASE-PROFILE-ANIMATIONS */
+/* BASE-PROFILE-ANIMATIONS */
 
-	.profile{
-		animation: intro_profile 0.5s forwards;
+.profile{
+	animation: intro_profile 0.5s forwards;
+	visibility: hidden;
+	animation-fill-mode: forwards; 
+
+}
+
+@keyframes intro_profile{
+	from{
+		transform: translate(0,-80vh);
 		visibility: hidden;
-		animation-fill-mode: forwards; 
 
 	}
-
-	@keyframes intro_profile{
-		from{
-			transform: translate(0,-80vh);
-			visibility: hidden;
-
-		}
-		to{
-			transform: translate(0,0);
-			visibility: visible;
-		}
+	to{
+		transform: translate(0,0);
+		visibility: visible;
 	}
-	.profile.animated{visibility:visible}
+}
+.profile.animated{visibility:visible}
 
-	.profile-contact{animation-delay:0s;}
-	.profile-btn{animation-delay: 0.4s;}
-	.profile-img{animation-delay: 0.8s;}
-	.profile.name{animation-delay: 1.2s;}
-
-
-	.icon{transition-duration: 0.5s;}
-
-	.icon:hover{
-		transform:  scale(1.2) rotate(5deg);
-	}
-
-	/* DESARROLLO */
-	.filter-amarillo{
-		filter: invert(78%) sepia(69%) saturate(2565%) hue-rotate(1deg) brightness(104%) contrast(105%);
-
-	}
-
-	/* PORTFOLIO SECTION */
-	.portfolio-item{
-		background-color:#560BAD;
-		height: 30vh;
-	}
-	.carousel-img{
-		max-height: 60vh;
-
-	}
+.profile-contact{animation-delay:0s;}
+.profile-btn{animation-delay: 0.4s;}
+.profile-img{animation-delay: 0.8s;}
+.profile.name{animation-delay: 1.2s;}
 
 
-	/*CONTACT FORM*/
+.icon{transition-duration: 0.5s;}
 
-	.dot {
-	  height: 50vh;
-	  width: 50vh;
-	  background-color: none;
-	  border-style: solid;
-	  border-color: white;
-	  border-width: 1px;
-	  border-radius: 50%;
-	  display: inline-block;
-	}
-	.contact-form{
-		background-color: #FDC500;
-		color: white;
-	}
-	input[type="text"],input[type="email"] {
-		background: rgba(255,255,255,0.1);
-		border:none;
-		box-shadow: 5px 5px 5px 0px rgba(86, 11, 173, 0.3) !important;
-	}
+.icon:hover{
+	transform:  scale(1.2) rotate(5deg);
+}
 
-	textarea{
-		background: rgba(255,255,255,0.1) !important;
-		border:none !important;
-		box-shadow: 5px 5px 5px 0px rgba(86, 11, 173, 0.3) !important;
+/* DESARROLLO */
+.filter-amarillo{
+	filter: invert(78%) sepia(69%) saturate(2565%) hue-rotate(1deg) brightness(104%) contrast(105%);
+
+}
+
+/* PORTFOLIO SECTION */
+.portfolio-item{
+	background-color:#560BAD;
+	height: 30vh;
+}
+.carousel-img{
+	max-height: 60vh;
+
+}
 
 
-	}
-	textarea::placeholder{
-	  color: rgba(255,255,255,0.7);
-	}
+/*CONTACT FORM*/
 
-	.form-control::placeholder {
-	  color: rgba(255,255,255,0.7);
-	}
+.dot {
+  height: 50vh;
+  width: 50vh;
+  background-color: none;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.contact-form{
+	background-color: #FDC500;
+	color: white;
+}
+input[type="text"],input[type="email"] {
+	background: rgba(255,255,255,0.1);
+	border:none;
+	box-shadow: 5px 5px 5px 0px rgba(86, 11, 173, 0.3) !important;
+}
 
-	.btn-submit{
-
-		margin-top: 5vh;
-		height: 8vh;
-		width: 100%;
-		border-radius: 10px;
-		background-color:#560BAD;
-		border: none;
-
-	}
-	/*
-
-	.btn-submit{
-		align-items: center;
-		height: 10vh;
-		width:10vh;
-		border-radius: 50%;
-		background-color:#560BAD;
-		border: none;
-	}
-
-	*/
+textarea{
+	background: rgba(255,255,255,0.1) !important;
+	border:none !important;
+	box-shadow: 5px 5px 5px 0px rgba(86, 11, 173, 0.3) !important;
 
 
-	/*FOOTER*/
-	#footer{
-		background-color: #7209B7;
-		color: white;
-		width:100%;
-		height:5vh;
-		text-align: center;
-		margin: 0px;
-		box-shadow: 0px -10px 5px 5px rgb(114, 9, 183);
-	}
+}
+textarea::placeholder{
+  color: rgba(255,255,255,0.7);
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.btn-submit{
+
+	margin-top: 5vh;
+	height: 8vh;
+	width: 100%;
+	border-radius: 10px;
+	background-color:#560BAD;
+	border: none;
+
+}
+/*
+
+.btn-submit{
+	align-items: center;
+	height: 10vh;
+	width:10vh;
+	border-radius: 50%;
+	background-color:#560BAD;
+	border: none;
+}
+
+*/
+
+
+/*FOOTER*/
+#footer{
+	background-color: #7209B7;
+	color: white;
+	width:100%;
+	height:5vh;
+	text-align: center;
+	margin: 0px;
+	/*box-shadow: 0px -10px 5px 5px rgb(114, 9, 183);*/
+}
